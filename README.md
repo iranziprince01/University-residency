@@ -27,10 +27,7 @@ The University Residence Management System Dashboard is a comprehensive and intu
 
 ## 🔧 Functional Requirements
 
-### 🔒 User Authentication
 
-- **Login System**: Implements secure login mechanisms to protect sensitive information. Uses encryption to ensure data privacy and supports multi-factor authentication for added security.
-- **Session Management**: Monitors user sessions to prevent unauthorized access and automatically logs users out after inactivity.
 
 ### 📊 Dashboard Overview
 
