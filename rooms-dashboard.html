@@ -17,460 +17,389 @@
   <body class="w-screen relative overflow-x-hidden min-h-screen bg-gray-100 scrollbar-hide jobs-dashboard-page dark:bg-[#000]">
     <div class="wrapper mx-auto text-gray-900 font-normal grid scrollbar-hide grid-cols-[257px,1fr] grid-rows-[auto,1fr]" id="layout">
       <aside
-      class="bg-white row-span-2 border-r border-neutral relative flex flex-col justify-between p-[25px] dark:bg-dark-neutral-bg dark:border-dark-neutral-border"
-    >
-      <div
-        class="absolute p-2 border-neutral right-0 border bg-white rounded-full cursor-pointer duration-300 translate-x-1/2 hover:opacity-75 dark:bg-dark-neutral-bg dark:border-dark-neutral-border"
-        id="sidebar-btn"
+        class="bg-white row-span-2 border-r border-neutral relative flex flex-col justify-between p-[25px] dark:bg-dark-neutral-bg dark:border-dark-neutral-border"
       >
-        <img
-          src="assets/images/icons/icon-arrow-left.svg"
-          alt="left chevron icon"
-        />
-      </div>
-      <div>
-        <a class="mb-10" href="index.html">
-          <img
-            class="logo-maximize"
-            src="assets/images/bringlogo.png"
-            alt="Frox logo" /><img
-            class="logo-minimize ml-[10px]"
-            src="assets/images/icons/bringlogo.png"
-            alt="Frox logo"
-        /></a>
-        <div class="pt-[106px] lg:pt-[35px] pb-[18px]">
-          <div class="sidemenu-item rounded-xl relative">
-            <input
-              class="sr-only peer"
-              type="checkbox"
-              value="dashboard"
-              name="sidemenu"
-              id="dashboard"
-            />
-            <label
-              class="flex items-center justify-between w-full cursor-pointer py-[17px] px-[21px] focus:outline-none peer-checked:border-transparent active"
-              for="dashboard"
-            >
-              <div class="flex items-center gap-[10px]">
-                <img
-                  src="assets/images/icons/icon-favorite-chart.svg"
-                  alt="side menu icon"
-                /><span
-                  class="text-normal font-semibold text-gray-500 sidemenu-title dark:text-gray-dark-500"
-                  >Dashboards</span
-                >
-              </div> </label
-            ><img
-              class="absolute right-2 transition-all duration-150 caret-icon pointer-events-none peer-checked:rotate-180 top-[22px]"
-              src="assets/images/icons/icon-arrow-down.svg"
-              alt="caret icon"
-            />
-            <div class="hidden peer-checked:block">
-              <ul class="text-gray-300 child-menu z-10 pl-[53px]">
-               
-                <li
-                  class="pb-2 transition-opacity duration-150 hover:opacity-75"
-                >
-                  <a class="text-normal" href="rooms-dashboard.html ">Jobs</a>
-                </li>
-                
-                <li
-                  class="pb-2 transition-opacity duration-150 hover:opacity-75"
-                >
-                  <a class="text-normal" href="index.html"
-                    >Analytics</a
-                  >
-                </li>
-               
-                <li
-                  class="pb-2 transition-opacity duration-150 hover:opacity-75"
-                >
-                  <a class="text-normal" href="chat-page-1.html"
-                    >Chat / Message</a
-                  >
-                </li>
-               
-                <li
-                  class="pb-2 transition-opacity duration-150 hover:opacity-75"
-                >
-                  <a class="text-normal" href="help-center-knowledge-base.html"
-                    >Help Center</a
-                  >
-                </li>
-             
-              </ul>
-            </div>
-          </div>
-         
-          <div class="sidemenu-item rounded-xl relative">
-            <input
-              class="sr-only peer"
-              type="checkbox"
-              value="jobs"
-              name="sidemenu"
-              id="jobs"
-            />
-            <label
-              class="flex items-center justify-between w-full cursor-pointer py-[17px] px-[21px] focus:outline-none peer-checked:border-transparent"
-              for="jobs"
-            >
-              <div class="flex items-center gap-[10px]">
-                <img
-                  src="assets/images/icons/icon-job.svg"
-                  alt="side menu icon"
-                /><span
-                  class="text-normal font-semibold text-gray-500 sidemenu-title dark:text-gray-dark-500"
-                  >Jobs</span
-                >
-              </div> </label
-            ><img
-              class="absolute right-2 transition-all duration-150 caret-icon pointer-events-none peer-checked:rotate-180 top-[22px]"
-              src="assets/images/icons/icon-arrow-down.svg"
-              alt="caret icon"
-            />
-            <div class="hidden peer-checked:block">
-              <ul class="text-gray-300 child-menu z-10 pl-[53px]">
-               
-                <li
-                  class="pb-2 transition-opacity duration-150 hover:opacity-75"
-                >
-                  <a class="text-normal" href="rooms-dashboard.html "
-                    >Book a Room</a
-                  >
-                </li>
-                
-              </ul>
-            </div>
-          </div>
-       
-          <div class="sidemenu-item rounded-xl relative">
-            <input
-              class="sr-only peer"
-              type="checkbox"
-              value="analytics"
-              name="sidemenu"
-              id="analytics"
-            />
-            <label
-              class="flex items-center justify-between w-full cursor-pointer py-[17px] px-[21px] focus:outline-none peer-checked:border-transparent"
-              for="analytics"
-            >
-              <div class="flex items-center gap-[10px]">
-                <img
-                  src="assets/images/icons/icon-analytics.svg"
-                  alt="side menu icon"
-                /><span
-                  class="text-normal font-semibold text-gray-500 sidemenu-title dark:text-gray-dark-500"
-                  >Analytics</span
-                >
-              </div> </label
-            ><img
-              class="absolute right-2 transition-all duration-150 caret-icon pointer-events-none peer-checked:rotate-180 top-[22px]"
-              src="assets/images/icons/icon-arrow-down.svg"
-              alt="caret icon"
-            />
-            <div class="hidden peer-checked:block">
-              <ul class="text-gray-300 child-menu z-10 pl-[53px]">
-                <li
-                  class="pb-2 transition-opacity duration-150 hover:opacity-75"
-                >
-                  <a class="text-normal" href="index.html"
-                    >Occupancy</a
-                  >
-                </li>
-                <li
-                  class="pb-2 transition-opacity duration-150 hover:opacity-75"
-                >
-                  <a class="text-normal" href="analytics-dashboard-2.html"
-                    >Satisfaction</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-         
-          <div class="sidemenu-item rounded-xl relative">
-            <input
-              class="sr-only peer"
-              type="checkbox"
-              value="chat"
-              name="sidemenu"
-              id="chat"
-            />
-            <label
-              class="flex items-center justify-between w-full cursor-pointer py-[17px] px-[21px] focus:outline-none peer-checked:border-transparent"
-              for="chat"
-            >
-              <div class="flex items-center gap-[10px]">
-                <img
-                  src="assets/images/icons/icon-chat.svg"
-                  alt="side menu icon"
-                /><span
-                  class="text-normal font-semibold text-gray-500 sidemenu-title dark:text-gray-dark-500"
-                  >Chat / Message</span
-                >
-              </div> </label
-            ><img
-              class="absolute right-2 transition-all duration-150 caret-icon pointer-events-none peer-checked:rotate-180 top-[22px]"
-              src="assets/images/icons/icon-arrow-down.svg"
-              alt="caret icon"
-            />
-            <div class="hidden peer-checked:block">
-              <ul class="text-gray-300 child-menu z-10 pl-[53px]">
-                <li
-                  class="pb-2 transition-opacity duration-150 hover:opacity-75"
-                >
-                  <a class="text-normal" href="chat-page-1.html">Residence manager</a>
-                </li>
-                
-              </ul>
-            </div>
-          </div>
-         
-          <div class="sidemenu-item rounded-xl relative">
-            <input
-              class="sr-only peer"
-              type="checkbox"
-              value="help"
-              name="sidemenu"
-              id="help"
-            />
-            <label
-              class="flex items-center justify-between w-full cursor-pointer py-[17px] px-[21px] focus:outline-none peer-checked:border-transparent"
-              for="help"
-            >
-              <div class="flex items-center gap-[10px]">
-                <img
-                  src="assets/images/icons/icon-headphone.svg"
-                  alt="side menu icon"
-                /><span
-                  class="text-normal font-semibold text-gray-500 sidemenu-title dark:text-gray-dark-500"
-                  >Help Center</span
-                >
-              </div> </label
-            ><img
-              class="absolute right-2 transition-all duration-150 caret-icon pointer-events-none peer-checked:rotate-180 top-[22px]"
-              src="assets/images/icons/icon-arrow-down.svg"
-              alt="caret icon"
-            />
-            <div class="hidden peer-checked:block">
-              <ul class="text-gray-300 child-menu z-10 pl-[53px]">
-                
-                <li
-                  class="pb-2 transition-opacity duration-150 hover:opacity-75"
-                >
-                  <a class="text-normal" href="help-center-ticket.html"
-                    >Ticket</a
-                  >
-                </li>
-                
-                <li
-                  class="pb-2 transition-opacity duration-150 hover:opacity-75"
-                >
-                  <a
-                    class="text-normal"
-                    href="help-center-knowledge-base.html"
-                    >Knowledge Base</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="category-list">
-          <div
-            class="w-full bg-neutral h-[1px] mb-[21px] dark:bg-dark-neutral-border"
-          ></div>
-          <h3
-            class="text-sm font-bold text-gray-1100 py-3 px-6 dark:text-gray-dark-1100"
-          >
-            Categories Available rooms 
-          </h3>
-          <div>
-            <a class="flex items-center justify-between py-3 pl-6" href="#"
-              ><span class="text-gray-500 text-normal dark:text-gray-dark-500"
-                >1 bed room</span
-              >
-              <div
-                class="grid place-items-center rounded w-[18px] h-[18px] bg-yellow"
-              >
-                <p
-                  class="font-medium text-gray-1100 text-[11px] leading-[11px]"
-                >
-                  8
-                </p>
-              </div></a
-            ><a class="flex items-center justify-between py-3 pl-6" href="#"
-              ><span class="text-gray-500 text-normal dark:text-gray-dark-500"
-                >2 Bed rooms</span
-              >
-              <div
-                class="grid place-items-center rounded w-[18px] h-[18px] bg-orange"
-              >
-                <p
-                  class="font-medium text-gray-1100 text-[11px] leading-[11px]"
-                >
-                  6
-                </p>
-              </div></a
-            ><a class="flex items-center justify-between py-3 pl-6" href="#"
-              ><span class="text-gray-500 text-normal dark:text-gray-dark-500"
-                >3 Bed rooms</span
-              ></a
-            ><a class="flex items-center justify-between py-3 pl-6" href="#"
-              ><span class="text-gray-500 text-normal dark:text-gray-dark-500"
-                >4 Bed rooms</span
-              >
-              <div
-                class="grid place-items-center rounded w-[18px] h-[18px] bg-pink"
-              >
-                <p
-                  class="font-medium text-gray-1100 text-[11px] leading-[11px]"
-                >
-                  5
-                </p>
-              </div></a
-            >
         <div
-          class="w-full bg-neutral h-[1px] mb-[35px] dark:bg-dark-neutral-border"
-        ></div>
-        <div class="pl-6 seller-maximize mb-[35px]">
-          <h3
-            class="text-sm font-bold text-gray-1100 mb-[15px] dark:text-gray-dark-1100"
-          >
-            Top Sellers
-          </h3>
-          <div class="flex items-center">
-            <a
-              class="block rounded-full border-neutral overflow-hidden border-[1.4px] dark:border-gray-dark-100 w-9 h-9 z-50"
-              href="seller-details.html"
-              ><img
-                class="w-full h-full object-cover"
-                src="assets/images/avatar-layouts-1.png"
-                alt="user avatar" /></a
-            ><a
-              class="block rounded-full border-neutral overflow-hidden border-[1.4px] dark:border-gray-dark-100 w-9 h-9 z-40 translate-x-[-10px]"
-              href="seller-details.html"
-              ><img
-                class="w-full h-full object-cover"
-                src="assets/images/avatar-layouts-2.png"
-                alt="user avatar" /></a
-            ><a
-              class="block rounded-full border-neutral overflow-hidden border-[1.4px] dark:border-gray-dark-100 w-9 h-9 z-30 translate-x-[-20px]"
-              href="seller-details.html"
-              ><img
-                class="w-full h-full object-cover"
-                src="assets/images/avatar-layouts-3.png"
-                alt="user avatar" /></a
-            ><a
-              class="block rounded-full border-neutral overflow-hidden border-[1.4px] dark:border-gray-dark-100 w-9 h-9 z-20 translate-x-[-30px]"
-              href="seller-details.html"
-              ><img
-                class="w-full h-full object-cover"
-                src="assets/images/avatar-layouts-4.png"
-                alt="user avatar"
-            /></a>
-            <button
-              class="w-9 h-9 rounded-full border-neutral overflow-hidden bg-color-brands grid place-items-center border-[1.4px] dark:border-dark-neutral-border z-10 translate-x-[-40px]"
-              type="button"
-            >
-              <img
-                src="assets/images/icons/icon-add-circle.svg"
-                alt="plus icon"
-              />
-            </button>
-          </div>
+          class="absolute p-2 border-neutral right-0 border bg-white rounded-full cursor-pointer duration-300 translate-x-1/2 hover:opacity-75 dark:bg-dark-neutral-bg dark:border-dark-neutral-border"
+          id="sidebar-btn"
+        >
+          <img
+            src="assets/images/icons/icon-arrow-left.svg"
+            alt="left chevron icon"
+          />
         </div>
-        <div class="seller-minimize">
-          <h3
-            class="text-sm font-bold text-gray-1100 mb-[15px] dark:text-gray-dark-1100"
-          >
-            Sellers
-          </h3>
-          <div class="flex items-center round text-">
-            <a
-              class="block rounded-full border-neutral overflow-hidden border-[1.4px] dark:border-gray-dark-100 w-9 h-9 z-50"
-              href="seller-details.html"
-              ><img
-                class="w-full h-full object-cover"
-                src="assets/images/avatar-layouts-1.png"
-                alt="user avatar" /></a
-            ><a
-              class="block rounded-full border-neutral overflow-hidden border-[1.4px] dark:border-gray-dark-100 w-9 h-9 z-40 translate-x-[-10px]"
-              href="seller-details.html"
-              ><img
-                class="w-full h-full object-cover"
-                src="assets/images/avatar-layouts-2.png"
-                alt="user avatar"
-            /></a>
-          </div>
-        </div>
-        <div class="upgrade-card">
-          <div
-            class="w-full bg-neutral h-[1px] mb-[35px] dark:bg-dark-neutral-border"
-          ></div>
-          <div
-            class="rounded-xl bg-neutral py-5 w-fit flex flex-col gap-5 justify-between px-[31px] dark:bg-dark-neutral-border"
-          >
-           
-        </div>
-      </div>
-      <div
-        class="rounded-xl bg-neutral pt-4 flex items-center gap-5 mt-5 sidebar-control pr-[18px] pb-[13px] pl-[19px] dark:bg-dark-neutral-border"
-      >
-        <div class="flex items-center gap-3">
-          <i class="moon-icon" id="theme-toggle-dark-icon"
-            ><img
-              class="cursor-pointer"
-              src="assets/images/icons/icon-moon.svg"
-              alt="moon icon" /><img
-              class="cursor-pointer"
-              src="assets/images/icons/icon-moon-active.svg"
-              alt="moon icon"
-          /></i>
-          <label
-            class="flex items-center cursor-pointer"
-            for="theme-toggle"
-            id="toggle-theme-btn"
-          >
-            <div class="relative">
+        <div>
+          <a class="mb-10" href="index.html">
+            <img
+              class="logo-maximize"
+              src="assets/images/bringlogo.png"
+              alt="Bright" /><img
+              class="logo-minimize ml-[10px]"
+              src="assets/images/icons/bringlogo.png"
+              alt="Bright logo"
+          /></a>
+          <div class="pt-[106px] lg:pt-[35px] pb-[18px]">
+            <div class="sidemenu-item rounded-xl relative">
               <input
                 class="sr-only peer"
                 type="checkbox"
-                name=""
-                id="theme-toggle"
+                value="dashboard"
+                name="sidemenu"
+                id="dashboard"
               />
-              <div
-                class="block rounded-full w-[48px] h-[16px] bg-gray-300 peer-checked:bg-[#B2A7FF]"
-              ></div>
-              <div
-                class="dot dotS absolute rounded-full transition h-[24px] w-[24px] top-[-4px] left-[-4px] bg-[#B2A7FF] peer-checked:bg-color-brands"
-              ></div>
-            </div> </label
-          ><i class="sun-icon" id="theme-toggle-light-icon"
-            ><img
-              class="cursor-pointer"
-              src="assets/images/icons/icon-sun.svg"
-              alt="sun icon" /><img
-              class="cursor-pointer"
-              src="assets/images/icons/icon-sun-active.svg"
-              alt="sun icon"
-          /></i>
-        </div>
+              <label
+                class="flex items-center justify-between w-full cursor-pointer py-[17px] px-[21px] focus:outline-none peer-checked:border-transparent active"
+                for="dashboard"
+              >
+                <div class="flex items-center gap-[10px]">
+                  <img
+                    src="assets/images/icons/icon-favorite-chart.svg"
+                    alt="side menu icon"
+                  /><span
+                    class="text-normal font-semibold text-gray-500 sidemenu-title dark:text-gray-dark-500"
+                    >Dashboards</span
+                  >
+                </div> </label
+              ><img
+                class="absolute right-2 transition-all duration-150 caret-icon pointer-events-none peer-checked:rotate-180 top-[22px]"
+                src="assets/images/icons/icon-arrow-down.svg"
+                alt="caret icon"
+              />
+              <div class="hidden peer-checked:block">
+                <ul class="text-gray-300 child-menu z-10 pl-[53px]">
+                 
+                  <li
+                    class="pb-2 transition-opacity duration-150 hover:opacity-75"
+                  >
+                    <a class="text-normal" href="rooms-dashboard.html ">Rooms</a>
+                  </li>
+                
+                  <li
+                    class="pb-2 transition-opacity duration-150 hover:opacity-75"
+                  >
+                    <a class="text-normal" href="index.html"
+                      >Analytics</a
+                    >
+                  </li>
+                 
+                  <li
+                    class="pb-2 transition-opacity duration-150 hover:opacity-75"
+                  >
+                    <a class="text-normal" href="chat-page-1.html"
+                      >Maintenance Requests </a
+                    >
+                  </li>
+                 
+                  <li
+                    class="pb-2 transition-opacity duration-150 hover:opacity-75"
+                  >
+                    <a class="text-normal" href="help-center-knowledge-base.html"
+                      >Help Center</a
+                    >
+                  </li>
+               
+                </ul>
+              </div>
+            </div>
+           
+            <div class="sidemenu-item rounded-xl relative">
+              <input
+                class="sr-only peer"
+                type="checkbox"
+                value="Rooms"
+                name="sidemenu"
+                id="jobs"
+              />
+              <label
+                class="flex items-center justify-between w-full cursor-pointer py-[17px] px-[21px] focus:outline-none peer-checked:border-transparent"
+                for="jobs"
+              >
+                <div class="flex items-center gap-[10px]">
+                  <img
+                    src="assets/images/icons/icon-job.svg"
+                    alt="side menu icon"
+                  /><span
+                    class="text-normal font-semibold text-gray-500 sidemenu-title dark:text-gray-dark-500"
+                    >Rooms</span
+                  >
+                </div> </label
+              ><img
+                class="absolute right-2 transition-all duration-150 caret-icon pointer-events-none peer-checked:rotate-180 top-[22px]"
+                src="assets/images/icons/icon-arrow-down.svg"
+                alt="caret icon"
+              />
+              <div class="hidden peer-checked:block">
+                <ul class="text-gray-300 child-menu z-10 pl-[53px]">
+                 
+                  <li
+                    class="pb-2 transition-opacity duration-150 hover:opacity-75"
+                  >
+                    <a class="text-normal" href="rooms-dashboard.html "
+                      >Book a Room</a
+                    >
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+         
+            <div class="sidemenu-item rounded-xl relative">
+              <input
+                class="sr-only peer"
+                type="checkbox"
+                value="analytics"
+                name="sidemenu"
+                id="analytics"
+              />
+              <label
+                class="flex items-center justify-between w-full cursor-pointer py-[17px] px-[21px] focus:outline-none peer-checked:border-transparent"
+                for="analytics"
+              >
+                <div class="flex items-center gap-[10px]">
+                  <img
+                    src="assets/images/icons/icon-analytics.svg"
+                    alt="side menu icon"
+                  /><span
+                    class="text-normal font-semibold text-gray-500 sidemenu-title dark:text-gray-dark-500"
+                    >Analytics</span
+                  >
+                </div> </label
+              ><img
+                class="absolute right-2 transition-all duration-150 caret-icon pointer-events-none peer-checked:rotate-180 top-[22px]"
+                src="assets/images/icons/icon-arrow-down.svg"
+                alt="caret icon"
+              />
+              <div class="hidden peer-checked:block">
+                <ul class="text-gray-300 child-menu z-10 pl-[53px]">
+                  <li
+                    class="pb-2 transition-opacity duration-150 hover:opacity-75"
+                  >
+                    <a class="text-normal" href="index.html"
+                      >Occupancy charts</a
+                    >
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+           
+            <div class="sidemenu-item rounded-xl relative">
+              <input
+                class="sr-only peer"
+                type="checkbox"
+                value="chat"
+                name="sidemenu"
+                id="chat"
+              />
+              <label
+                class="flex items-center justify-between w-full cursor-pointer py-[17px] px-[21px] focus:outline-none peer-checked:border-transparent"
+                for="chat"
+              >
+                <div class="flex items-center gap-[10px]">
+                  <img
+                    src="assets/images/icons/icon-chat.svg"
+                    alt="side menu icon"
+                  /><span
+                    class="text-normal font-semibold text-gray-500 sidemenu-title dark:text-gray-dark-500"
+                    >Maintenance Requests</span
+                  >
+                </div> </label
+              ><img
+                class="absolute right-2 transition-all duration-150 caret-icon pointer-events-none peer-checked:rotate-180 top-[22px]"
+                src="assets/images/icons/icon-arrow-down.svg"
+                alt="caret icon"
+              />
+              <div class="hidden peer-checked:block">
+                <ul class="text-gray-300 child-menu z-10 pl-[53px]">
+                  <li
+                    class="pb-2 transition-opacity duration-150 hover:opacity-75"
+                  >
+                    <a class="text-normal" href="chat-page-1.html">Residence manager</a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+           
+            <div class="sidemenu-item rounded-xl relative">
+              <input
+                class="sr-only peer"
+                type="checkbox"
+                value="help"
+                name="sidemenu"
+                id="help"
+              />
+              <label
+                class="flex items-center justify-between w-full cursor-pointer py-[17px] px-[21px] focus:outline-none peer-checked:border-transparent"
+                for="help"
+              >
+                <div class="flex items-center gap-[10px]">
+                  <img
+                    src="assets/images/icons/icon-headphone.svg"
+                    alt="side menu icon"
+                  /><span
+                    class="text-normal font-semibold text-gray-500 sidemenu-title dark:text-gray-dark-500"
+                    >Help Center</span
+                  >
+                </div> </label
+              ><img
+                class="absolute right-2 transition-all duration-150 caret-icon pointer-events-none peer-checked:rotate-180 top-[22px]"
+                src="assets/images/icons/icon-arrow-down.svg"
+                alt="caret icon"
+              />
+              <div class="hidden peer-checked:block">
+                <ul class="text-gray-300 child-menu z-10 pl-[53px]">
+                  
+                  
+                  <li
+                    class="pb-2 transition-opacity duration-150 hover:opacity-75"
+                  >
+                    <a
+                      class="text-normal"
+                      href="help-center-knowledge-base.html"
+                      >Knowledge Base</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="category-list">
+            <div
+              class="w-full bg-neutral h-[1px] mb-[21px] dark:bg-dark-neutral-border"
+            ></div>
+            <h3
+              class="text-sm font-bold text-gray-1100 py-3 px-6 dark:text-gray-dark-1100"
+            >
+              Categories Available rooms 
+            </h3>
+            <div>
+              <a class="flex items-center justify-between py-3 pl-6" href="#"
+                ><span class="text-gray-500 text-normal dark:text-gray-dark-500"
+                  >1 bed room</span
+                >
+                <div
+                  class="grid place-items-center rounded w-[18px] h-[18px] bg-yellow"
+                >
+                  <p
+                    class="font-medium text-gray-1100 text-[11px] leading-[11px]"
+                  >
+                    8
+                  </p>
+                </div></a
+              ><a class="flex items-center justify-between py-3 pl-6" href="#"
+                ><span class="text-gray-500 text-normal dark:text-gray-dark-500"
+                  >2 Bed rooms</span
+                >
+                <div
+                  class="grid place-items-center rounded w-[18px] h-[18px] bg-orange"
+                >
+                  <p
+                    class="font-medium text-gray-1100 text-[11px] leading-[11px]"
+                  >
+                    6
+                  </p>
+                </div></a
+              ><a class="flex items-center justify-between py-3 pl-6" href="#"
+                ><span class="text-gray-500 text-normal dark:text-gray-dark-500"
+                  >3 Bed rooms</span
+                ></a
+              ><a class="flex items-center justify-between py-3 pl-6" href="#"
+                ><span class="text-gray-500 text-normal dark:text-gray-dark-500"
+                  >4 Bed rooms</span
+                >
+                <div
+                  class="grid place-items-center rounded w-[18px] h-[18px] bg-pink"
+                >
+                  <p
+                    class="font-medium text-gray-1100 text-[11px] leading-[11px]"
+                  >
+                    5
+                  </p>
+                </div></a
+              >
+          <div
+            class="w-full bg-neutral h-[1px] mb-[35px] dark:bg-dark-neutral-border"
+          ></div>
+          <div class="seller-minimize">
+            <h3
+              class="text-sm font-bold text-gray-1100 mb-[15px] dark:text-gray-dark-1100"
+            >
+              Sellers
+            </h3>
+            <div class="flex items-center round text-">
+              <a
+                class="block rounded-full border-neutral overflow-hidden border-[1.4px] dark:border-gray-dark-100 w-9 h-9 z-50"
+                href="seller-details.html"
+                ><img
+                  class="w-full h-full object-cover"
+                  src="assets/images/avatar-layouts-1.png"
+                  alt="user avatar" /></a
+              ><a
+                class="block rounded-full border-neutral overflow-hidden border-[1.4px] dark:border-gray-dark-100 w-9 h-9 z-40 translate-x-[-10px]"
+                href="seller-details.html"
+                ><img
+                  class="w-full h-full object-cover"
+                  src="assets/images/avatar-layouts-2.png"
+                  alt="user avatar"
+              /></a>
+            </div>
+          </div>
+          
         <div
-          class="bg-neutral-bg w-[2px] h-[30px] dark:bg-dark-neutral-bg"
-        ></div>
-        <div>
-          <img
-            class="cursor-pointer"
-            id="sidebar-expand"
-            src="assets/images/icons/icon-maximize-3.svg"
-            alt="expand icon"
-          />
+          class="rounded-xl bg-neutral pt-4 flex items-center gap-5 mt-5 sidebar-control pr-[18px] pb-[13px] pl-[19px] dark:bg-dark-neutral-border"
+        >
+          <div class="flex items-center gap-3">
+            <i class="moon-icon" id="theme-toggle-dark-icon"
+              ><img
+                class="cursor-pointer"
+                src="assets/images/icons/icon-moon.svg"
+                alt="moon icon" /><img
+                class="cursor-pointer"
+                src="assets/images/icons/icon-moon-active.svg"
+                alt="moon icon"
+            /></i>
+            <label
+              class="flex items-center cursor-pointer"
+              for="theme-toggle"
+              id="toggle-theme-btn"
+            >
+              <div class="relative">
+                <input
+                  class="sr-only peer"
+                  type="checkbox"
+                  name=""
+                  id="theme-toggle"
+                />
+                <div
+                  class="block rounded-full w-[48px] h-[16px] bg-gray-300 peer-checked:bg-[#B2A7FF]"
+                ></div>
+                <div
+                  class="dot dotS absolute rounded-full transition h-[24px] w-[24px] top-[-4px] left-[-4px] bg-[#B2A7FF] peer-checked:bg-color-brands"
+                ></div>
+              </div> </label
+            ><i class="sun-icon" id="theme-toggle-light-icon"
+              ><img
+                class="cursor-pointer"
+                src="assets/images/icons/icon-sun.svg"
+                alt="sun icon" /><img
+                class="cursor-pointer"
+                src="assets/images/icons/icon-sun-active.svg"
+                alt="sun icon"
+            /></i>
+          </div>
+          
+          <div>
+            <img
+              class="cursor-pointer"
+              id="sidebar-expand"
+              src="assets/images/icons/icon-maximize-3.svg"
+              alt="expand icon"
+            />
+          </div>
         </div>
-      </div>
-   </aside>
-      <header class="flex items-center justify-between flex-wrap bg-neutral-bg p-5 gap-5 md:py-6 md:pl-[25px] md:pr-[38px] lg:flex-nowrap dark:bg-dark-neutral-bg lg:gap-0"><a class="hidden logo" href="index.html"><img class="md:mr-[100px] lg:mr-[133px]" src="assets/images/icons/icon-logo.svg" alt="Frox logo"></a>
+     xxxxxx</aside>
+      <header class="flex items-center justify-between flex-wrap bg-neutral-bg p-5 gap-5 md:py-6 md:pl-[25px] md:pr-[38px] lg:flex-nowrap dark:bg-dark-neutral-bg lg:gap-0"><a class="hidden logo" href="index.html"><img class="md:mr-[100px] lg:mr-[133px]" src="assets/images/icons/icon-logo.svg" alt="Bright logo"></a>
         <div class="bg-gray-100 flex rounded-xl w-full m-0 py-[14px] px-[18px] xl:w-[360px] dark:bg-gray-dark-100 lg:max-w-[250px] xl:max-w-[360px] lg:mr-[47px] lg:ml-6 order-last lg:order-first"><img src="assets/images/icons/icon-search-normal.svg" alt="seacrh icon">
           <input class="input w-full bg-transparent outline-none pl-2 h-5 text-gray-300 focus:!outline-none placeholder:text-gray-300 dark:placeholder:text-gray-dark-300 placeholder:font-semibold" type="text" placeholder="Search"><img src="assets/images/icons/icon-microphone-2.svg" alt="microphone icon">
         </div>
@@ -716,7 +645,7 @@
                     <button class="btn text-sm h-fit min-h-fit capitalize leading-4 border-0 text-gray-1100 font-normal bg-[#C5FFDC] py-[10px] hover:bg-[#d7ffe7]">Make a reservation</button>
                     <button class="btn text-sm h-fit min-h-fit capitalize leading-4 border-0 text-gray-1100 font-normal bg-[#C5E3FF] py-[10px] hover:bg-[#dbedff]">Contact Us </button>
                   </div>
-                  <p class="text-xl text-color-brands font-semibold flex-1 text-right w-full leading-[18px]">$396.84 <span class="text-gray-500 text-sm leading-4 font-normal dark:text-gray-dark-500">/ Hour</span></p>
+                  <p class="text-xl text-color-brands font-semibold flex-1 text-right w-full leading-[18px]">$396.84 <span class="text-gray-500 text-sm leading-4 font-normal dark:text-gray-dark-500">/ Month</span></p>
                 </div>
               </div>
               <div class="bg-gray-100 border border-neutral-accent flex items-start justify-between flex-col gap-y-2 lg:items-center dark:bg-gray-dark-100 rounded-[10px] dark:border-dark-neutral-border pt-[27px] pl-[21px] pb-[30px] pr-[26px] lg:flex-row">
@@ -846,7 +775,7 @@
                   
                 </div>
                 <p class="text-xs text-gray-500 dark:text-gray-dark-500 max-w-[302px] mb-[14px]"> It incorporates advanced front-end development techniques, offering features like data visualization, room management, and maintenance request handling.</p>
-                <p class="text-right text-red text-sm mb-2">36,895.2</p>
+                <p class="text-right text-red text-sm mb-2">6,895.2</p>
                 <div class="flex items-center w-full gap-x-[14px] mb-[22px]">
                   <div class="overflow-hidden bg-neutral flex-1 h-[5px] rounded-[5px] dark:bg-dark-neutral-border">
                     <div class="flex flex-col justify-center overflow-hidden whitespace-nowrap w-[40%] bg-color-brands rounded-[5px] h-[5px]" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
