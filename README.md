@@ -6,7 +6,7 @@ The University Residence Management System Dashboard is a comprehensive and intu
 
 ## 📂 Submission
 
-- **Repository Link**: [Insert GitHub link]
+- **Repository Link**: https://github.com/eldadgishinge/University-residency
 
 ## 👥 Team Members
 
